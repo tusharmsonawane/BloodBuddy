@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+.card .table thead{
+    font-weight:900;
+}
+.card .table tbody{
+    font-family: 'Lato', sans-serif;
+}
+
+body::-webkit-scrollbar{
+   width:0;
+}

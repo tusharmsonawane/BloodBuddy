@@ -1,0 +1,282 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eee;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    margin: 10px 10px;
+    background-color: #fff;
+    width: calc(100% - 20px);
+}
+.logo a{
+    font-size: 30px;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 95px;
+    left: 10px;
+    height: calc(100% - 90px);
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+    transition: all .55s ease;
+}
+.sidebar.active{
+    width: 280px;
+}
+
+ul{
+    list-style: none;
+}
+.sidebar ul{
+    position: absolute;
+    top:5px;
+    left:0; 
+    width:100%;
+    padding-left:5px;
+    padding-top:40px;
+    list-style: none;
+    }
+.sidebar ul li{
+    position:relative;
+    width:100%;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: block;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color:#eeee;
+    opacity: 0.8;
+}
+.sidebar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height:60px;
+    line-height: 65px;
+    text-align: center;
+}
+.sidebar ul li a .icon i{
+    font-size: 1.5em;
+}
+.sidebar ul li a .title{
+    position: relative;
+    padding-left: 5px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    font-size: 1.2em;
+}
+.sidebar ul li a:hover{
+    opacity: 1;
+}
+.content{
+    position: fixed;
+    top: 95px;
+    right: 10px;
+    height: calc(100% - 90px);
+    width: calc(100% - 90px);
+    padding: 0px 20px;
+    transition: all .45s ease-in-out;
+}
+.content.active{
+    width: calc(100% - 300px);
+}
+.content::-webkit-scrollbar{
+    width: 0;
+}
+.donarCards{
+    position: relative;
+    
+}
+.donarCards p{
+    font-size: 45px;
+}
+.donarCards a{
+    color: #333;
+}
+.donarCards .donarCardTitle{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+.donarCards .donarCardTitle span:nth-child(2){
+    font-size: 28px;
+}
+.form-control{
+    margin-top: 10px;
+}
+.donarname1,
+.donarname2{
+    gap: 10px;
+}
+.btn-primary{
+    margin-top: 10px;
+    height: 45px;
+}
+@media screen and (max-width: 1080px){
+    .donarCardTitle span{
+          font-size: 18px;
+    }
+}
+@media screen and (max-width: 950px){
+    .donarCardTitle span{
+          font-size: 16px;
+    }
+    .donarCards .donarCardTitle span:nth-child(2){
+        font-size: 22px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 910px){
+    .donarCardTitle span{
+          font-size: 14px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .tabletitle{
+        display: none;
+    }
+    .card p .mx-5{
+        margin:0px!important;
+        margin-left:10px!important;
+    }
+}
+@media screen and (max-width:780px){
+    .donarCards .col-md-4{
+        padding: .3rem!important;
+        margin-top:-20px!important;
+        margin-bottom:-20px!important;
+    }
+}
+@media screen and (max-width:770px){
+    .bloodcamp  .mx-1{
+        margin:0px!important;
+    }
+
+}
+@media screen and (max-width:670px){
+    .navbar{
+        margin: 0;
+        width: 100%;
+    }
+    .sidebar{
+      top: 80px;
+      left: 0;
+      height: calc(100% - 80px);
+    }
+    .content{
+        top: 80px;
+        padding: 5;
+    }
+    .donarname1,
+    .donarname2{
+         display: flex;
+         flex-direction: column;
+    }
+}
+@media screen and (max-width:600px){
+    .sidebar{
+        width: 0;
+    }
+    .content{
+        width: calc(100% - 20px);
+    }
+    .donarTable{
+        padding: 0;
+    }
+     .donarCards .p-3{
+        padding: .1rem!important;
+    }
+
+
+    .donarCards .col-md-4{
+        padding: .3rem!important;
+        margin:0;
+        margin-top:-10px;
+    }
+    .bars .profiletitle{
+        display: none;
+    }
+     .donarProfile img{
+        height:20px;
+        width:30px;
+    }
+    .history{
+        margin: -10px!important;
+        margin-top: 0px!important;
+    }
+    .aboutHospital .p-3{
+        margin: 0px!important;
+        margin-top:10px!important;
+    }
+}
+@media screen and (max-width:570px){
+    .bars span:nth-child(1){
+        margin-top: 6px;
+    }
+    .appointment .p-3{
+        margin: 0!important;
+        margin-top: 10px!important;
+        padding: 0!important;
+    }
+}
+@media screen and (max-width:500px){
+   .donarTable{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   }
+   .card .card-body p .fs-5{
+    font-size: 14px;
+   }
+   .card .card-body p{
+    font-size: 13px;
+   }
+ 
+}
+@media screen and (max-width:410px){
+   table{
+    font-size:12px;
+   }
+   .logo a{
+    font-size: 22px;
+}
+}
+
+@media screen and (max-width:340px){
+    
+    .sidebar{
+        top: 65px;
+    }
+    .sidebar.active{
+        width: 100%;
+    }
+    .content{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:300px){
+   .logo a{
+    font-size:20px;
+   }
+   .donarprofile{
+     height: 30px;
+     width:30px;
+   }
+   .menutoggle{
+    font-size: 18px;
+   }
+}
